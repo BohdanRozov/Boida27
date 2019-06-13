@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Boida27Class</class>
+ <widget class="QMainWindow" name="Boida27Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Boida27</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTreeWidget" name="componentsTree">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>181</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Boida27 v1</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>System</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resources/System icon.png</normaloff>Resources/System icon.png</iconset>
+     </property>
+     <item>
+      <property name="text">
+       <string>CPU</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/CPU.png</normaloff>Resources/CPU.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RAM</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/RAM.png</normaloff>Resources/RAM.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GPU</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/GPU.png</normaloff>Resources/GPU.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Disks</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PCI</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>Memory</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Software</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Drives</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I/O Devices</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTableWidget" name="propertiesTable">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>0</y>
+      <width>741</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>175</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>New Row</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Value</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Boida27.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>itemClicked()</slot>
+ </slots>
+</ui>
