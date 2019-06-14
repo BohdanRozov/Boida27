@@ -22,6 +22,7 @@ void Boida27::printProperties(vector<pair<string, string>> properties) {
 	int i = 0;
 	for each (pair<string, string> p in properties)
 	{
+		ui.propertiesTable->insertRow(i);
 		ui.propertiesTable->setItem(i, 0, new QTableWidgetItem(QString::fromStdString(p.first)));
 		ui.propertiesTable->setItem(i, 1, new QTableWidgetItem(QString::fromStdString(p.second)));
 		i++;
@@ -30,7 +31,12 @@ void Boida27::printProperties(vector<pair<string, string>> properties) {
 
 void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	int column) {
-	ui.propertiesTable->clearContents();
+	
+	for (int i = 0; i < ui.propertiesTable->rowCount(); i++) {
+		ui.propertiesTable->removeRow(i);
+	}
+
+
 	if (QString::compare(item->text(0), "CPU") == 0) {
 		printProperties(SystemManager().getCpuPropeties());
 	}
@@ -39,5 +45,8 @@ void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	}
 	else if (QString::compare(item->text(0), "Disks") == 0) {
 		printProperties(SystemManager().getDisksPropeties());
+	}
+	else if (QString::compare(item->text(0), "PnP Devices") == 0) {
+		printProperties(SystemManager().getPnPPropeties());
 	}
 }

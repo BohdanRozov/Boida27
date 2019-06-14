@@ -1,16 +1,26 @@
 #include "Manager.h"
 
 vector<string> Manager::printInfo(String^ hardwareClass, String^ propertyName) {
-	ManagementObjectSearcher^ searcher = gcnew ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM " + hardwareClass);
-	ManagementObjectCollection^ collection = searcher->Get();
-
 	vector<string> toReturn;
-	for each (ManagementObject^ object in collection)
-	{
-		Console::WriteLine(object[propertyName]->ToString());
-		string stdStr = msclr::interop::marshal_as<string>(object[propertyName]->ToString());
-		toReturn.push_back(stdStr);
+	try {
+		ManagementObjectSearcher^ searcher = gcnew ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM " + hardwareClass);
+		ManagementObjectCollection^ collection = searcher->Get();
+
+		for each (ManagementObject^ object in collection)
+		{
+			if (object != nullptr && object[propertyName] != nullptr) {
+				string propStr = "";
+				auto prop = object[propertyName]->ToString();
+				if (prop != nullptr) {
+					propStr = msclr::interop::marshal_as<string>(prop);
+				}
+				toReturn.push_back(propStr);
+			}
+		}
 	}
+	catch (exception e) {
+	}
+
 	return toReturn;
 }
 
