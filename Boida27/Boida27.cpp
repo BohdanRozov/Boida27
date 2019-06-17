@@ -54,6 +54,9 @@ void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	else if (QString::compare(item->text(0), "BIOS & CMOS") == 0) {
 		printProperties(sysMan.getBCPropeties());
 	}
+	else if (QString::compare(item->text(0), "Memory") == 0) {
+		printProperties(memMan.getMemoryPropeties());
+	}
 	else if (QString::compare(item->text(0), "Software") == 0) {
 		printWProperties(softMan.getSoftwarePropeties());
 	}

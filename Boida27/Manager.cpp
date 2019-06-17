@@ -57,7 +57,7 @@ vector<string> Manager::getCorrect_UINT64T_Strs(vector<string> strs) {
 		uint64_t value;
 		istringstream iss(str);
 		iss >> value;
-		ss << value / 1024 / 1024 / 1024 << " GB";
+		ss << ceilf((value / 1024.0 / 1024 / 1024) * 10) / 10 << " GB";
 		toReturn.push_back(ss.str());
 	}
 	return toReturn;

@@ -6,6 +6,7 @@
 #include "SoftwareManager.h"
 #include "DrivesManager.h"
 #include "IOManager.h"
+#include "MemoryManager.h"
 
 #include <msclr\marshal_cppstd.h>
 #include <vector>
@@ -31,6 +32,7 @@ private:
 	SoftwareManager softMan = SoftwareManager();
 	DrivesManager drivesMan = DrivesManager();
 	IOManager ioMan = IOManager();
+	MemoryManager memMan = MemoryManager();
 
 private slots:
 	void on_componentsTree_itemClicked(QTreeWidgetItem *item, int column);

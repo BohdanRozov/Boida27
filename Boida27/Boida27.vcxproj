@@ -120,6 +120,7 @@
     <ClCompile Include="IOManager.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="SoftwareManager.cpp" />
     <ClCompile Include="SystemManager.cpp" />
   </ItemGroup>
@@ -140,6 +141,7 @@
     <ClInclude Include="DrivesManager.h" />
     <ClInclude Include="IOManager.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="SoftwareManager.h" />
     <ClInclude Include="SystemManager.h" />
   </ItemGroup>
