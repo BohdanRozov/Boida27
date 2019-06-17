@@ -44,7 +44,7 @@ void Boida27::printWProperties(vector<pair<string, wstring>> properties) {
 void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	int column) {
 	
-	for (int i = 0; i < ui.propertiesTable->rowCount(); i++) {
+	for (int i = ui.propertiesTable->rowCount() - 1; i >= 0; i--) {
 		ui.propertiesTable->removeRow(i);
 	}
 
