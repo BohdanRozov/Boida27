@@ -11,6 +11,7 @@ class SoftwareManager :
 {
 public:
 	SoftwareManager();
+	~SoftwareManager();
 	vector<pair<string, wstring>> getSoftwarePropeties();
 };
 

@@ -20,14 +20,15 @@ vector<pair<string, string>> SystemManager::getGpuPropeties() {
 }
 
 vector<pair<string, string>> SystemManager::getDisksPropeties() {
-	vector<pair<string, string>> gpuProperites;
-
-	for each (string str in printInfo("Win32_DiskDrive", "Model"))
-	{
-		gpuProperites.push_back(pair<string, string>("Name", str));
+	vector<pair<string, string>> disksProperites;
+	auto v1 = printInfo("Win32_LogicalDisk", "Name");
+	auto v2 = printInfoSize("Win32_LogicalDisk", "Size");
+	for (int i = 0; i < v1.size(); i++) {
+		disksProperites.push_back(pair<string, string>("Name", v1[i]));
+		disksProperites.push_back(pair<string, string>("Size", v2[i])); 
 	}
 
-	return gpuProperites;
+	return disksProperites;
 }
 
 vector<pair<string, string>> SystemManager::getPnPPropeties() {

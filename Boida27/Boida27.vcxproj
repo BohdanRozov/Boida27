@@ -116,6 +116,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Boida27.cpp" />
+    <ClCompile Include="DrivesManager.cpp" />
+    <ClCompile Include="IOManager.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SoftwareManager.cpp" />
@@ -135,6 +137,8 @@
     <Reference Include="System.Management" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DrivesManager.h" />
+    <ClInclude Include="IOManager.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="SoftwareManager.h" />
     <ClInclude Include="SystemManager.h" />

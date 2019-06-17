@@ -4,6 +4,10 @@ SoftwareManager::SoftwareManager()
 {
 }
 
+SoftwareManager::~SoftwareManager()
+{
+}
+
 vector<pair<string, wstring>> SoftwareManager::getSoftwarePropeties() {
 	vector<pair<string, wstring>> softwarePropeties;
 
