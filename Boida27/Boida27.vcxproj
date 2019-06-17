@@ -118,6 +118,7 @@
     <ClCompile Include="Boida27.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SoftwareManager.cpp" />
     <ClCompile Include="SystemManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="SoftwareManager.h" />
     <ClInclude Include="SystemManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -3,6 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_Boida27.h"
 #include "SystemManager.h"
+#include "SoftwareManager.h"
 
 #include <msclr\marshal_cppstd.h>
 #include <vector>
@@ -23,7 +24,10 @@ public:
 private:
 	Ui::Boida27Class ui;
 	void printProperties(vector<pair<string, string>> properties);
+	void printWProperties(vector<pair<string, wstring>> properties);
 	void getCorrect_UINT64T_Strs(vector<string> strs);
+	SystemManager sysMan = SystemManager();
+	SoftwareManager softMan = SoftwareManager();
 
 private slots:
 	void on_componentsTree_itemClicked(QTreeWidgetItem *item, int column);

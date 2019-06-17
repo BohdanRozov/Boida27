@@ -29,6 +29,18 @@ void Boida27::printProperties(vector<pair<string, string>> properties) {
 	}
 }
 
+void Boida27::printWProperties(vector<pair<string, wstring>> properties) {
+	int i = 0;
+	for each (pair<string, wstring> p in properties)
+	{
+		ui.propertiesTable->insertRow(i);
+		ui.propertiesTable->setItem(i, 0, new QTableWidgetItem(QString::fromStdString(p.first)));
+		ui.propertiesTable->setItem(i, 1, new QTableWidgetItem(QString::fromStdWString(p.second)));
+		i++;
+	}
+}
+
+
 void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	int column) {
 	
@@ -38,15 +50,18 @@ void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 
 
 	if (QString::compare(item->text(0), "CPU") == 0) {
-		printProperties(SystemManager().getCpuPropeties());
+		printProperties(sysMan.getCpuPropeties());
 	}
 	else if (QString::compare(item->text(0), "GPU") == 0) {
-		printProperties(SystemManager().getGpuPropeties());
+		printProperties(sysMan.getGpuPropeties());
 	}
 	else if (QString::compare(item->text(0), "Disks") == 0) {
-		printProperties(SystemManager().getDisksPropeties());
+		printProperties(sysMan.getDisksPropeties());
 	}
 	else if (QString::compare(item->text(0), "PnP Devices") == 0) {
-		printProperties(SystemManager().getPnPPropeties());
+		printProperties(sysMan.getPnPPropeties());
+	}
+	else if (QString::compare(item->text(0), "Software") == 0) {
+		printWProperties(softMan.getSoftwarePropeties());
 	}
 }
