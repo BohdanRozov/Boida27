@@ -17,6 +17,9 @@ public:
 
 	vector<pair<string, string>> getCpuPropeties();
 	vector<pair<string, string>> getGpuPropeties();
+	vector<pair<string, string>> getPCIPropeties();
 	vector<pair<string, string>> getDisksPropeties();
 	vector<pair<string, string>> getPnPPropeties();
+	vector<pair<string, string>> getBCPropeties();
+
 };

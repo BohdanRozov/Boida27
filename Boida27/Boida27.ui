@@ -78,6 +78,11 @@
        <string>PnP Devices</string>
       </property>
      </item>
+     <item>
+      <property name="text">
+       <string>BIOS &amp; CMOS</string>
+      </property>
+     </item>
     </item>
     <item>
      <property name="text">
