@@ -18,7 +18,7 @@ vector<string> Manager::printInfo(String^ hardwareClass, String^ propertyName) {
 			}
 		}
 	}
-	catch (exception e) {
+	catch (...) {
 	}
 
 	return toReturn;
@@ -42,7 +42,7 @@ vector<string> Manager::printInfoSize(String^ hardwareClass, String^ propertyNam
 			}
 		}
 	}
-	catch (exception e) {
+	catch (...) {
 	}
 
 	return getCorrect_UINT64T_Strs(toReturn);
@@ -84,7 +84,7 @@ vector<string> Manager::printInfoCondition(String^ hardwareClass, String^ proper
 			}
 		}
 	}
-	catch (exception e) {
+	catch (...) {
 	}
 
 	return toReturn;
