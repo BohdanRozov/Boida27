@@ -122,6 +122,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="SoftwareManager.cpp" />
+    <ClCompile Include="SummaryManager.cpp" />
     <ClCompile Include="SystemManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +144,7 @@
     <ClInclude Include="Manager.h" />
     <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="SoftwareManager.h" />
+    <ClInclude Include="SummaryManager.h" />
     <ClInclude Include="SystemManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
