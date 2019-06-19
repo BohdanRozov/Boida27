@@ -18,7 +18,5 @@ vector<pair<string, string>> SummaryManager::getSummaryPropeties() {
 		sumProperites.push_back(pair<string, string>("Architecture", v2[i]));
 	}
 
-	return sumProperites;
-
-	
+	return sumProperites;	
 }
