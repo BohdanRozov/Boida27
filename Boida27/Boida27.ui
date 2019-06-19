@@ -67,20 +67,36 @@
       <property name="text">
        <string>Disks</string>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/Disk.png</normaloff>Resources/Disk.png</iconset>
+      </property>
      </item>
      <item>
       <property name="text">
        <string>PCI</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/PCI.png</normaloff>Resources/PCI.png</iconset>
       </property>
      </item>
      <item>
       <property name="text">
        <string>PnP Devices</string>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/PnP.png</normaloff>Resources/PnP.png</iconset>
+      </property>
      </item>
      <item>
       <property name="text">
        <string>BIOS &amp; CMOS</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Resources/bios.svg</normaloff>Resources/bios.svg</iconset>
       </property>
      </item>
     </item>
@@ -88,20 +104,45 @@
      <property name="text">
       <string>Memory</string>
      </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resources/Memory.png</normaloff>Resources/Memory.png</iconset>
+     </property>
     </item>
     <item>
      <property name="text">
       <string>Software</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resources/software.png</normaloff>Resources/software.png</iconset>
      </property>
     </item>
     <item>
      <property name="text">
       <string>Drives</string>
      </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resources/Drive.png</normaloff>Resources/Drive.png</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Summary</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resources/summary.png</normaloff>Resources/summary.png</iconset>
+     </property>
     </item>
     <item>
      <property name="text">
       <string>I/O Devices</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resources/io.png</normaloff>Resources/io.png</iconset>
      </property>
     </item>
    </widget>
