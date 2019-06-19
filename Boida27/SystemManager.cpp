@@ -8,6 +8,19 @@ vector<pair<string, string>> SystemManager::getCpuPropeties() {
 	return cpuProperites;
 }
 
+vector<pair<string, string>> SystemManager::getRamPropeties() {
+	vector<pair<string, string>> ramProperites;
+	int i = 1;
+	for each (string str in printInfoSize("Win32_PhysicalMemory", "Capacity"))
+	{
+		stringstream ss;
+		ss << "Slot " << i++;
+		ramProperites.push_back(pair<string, string>(ss.str(), str));
+	}
+
+	return ramProperites;
+}
+
 vector<pair<string, string>> SystemManager::getGpuPropeties() {
 	vector<pair<string, string>> gpuProperites;
 

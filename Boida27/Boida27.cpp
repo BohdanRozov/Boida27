@@ -39,6 +39,9 @@ void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	if (QString::compare(item->text(0), "CPU") == 0) {
 		printProperties(sysMan.getCpuPropeties());
 	}
+	else if (QString::compare(item->text(0), "RAM") == 0) {
+		printProperties(sysMan.getRamPropeties());
+	}
 	else if (QString::compare(item->text(0), "GPU") == 0) {
 		printProperties(sysMan.getGpuPropeties());
 	}
