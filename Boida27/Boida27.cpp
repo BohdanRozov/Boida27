@@ -66,6 +66,9 @@ void Boida27::on_componentsTree_itemClicked(QTreeWidgetItem *item,
 	else if (QString::compare(item->text(0), "Drives") == 0) {
 		printProperties(drivesMan.getDrivesPropeties());
 	}
+	else if (QString::compare(item->text(0), "Summary") == 0) {
+		printProperties(sumMan.getSummaryPropeties());
+	}
 	else if (QString::compare(item->text(0), "I/O Devices") == 0) {
 		printProperties(ioMan.getIOPropeties());
 	}
